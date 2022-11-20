@@ -1,7 +1,7 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
   Swal.fire({
-    title: 'Do you want to play music in the background?',
+    title: 'Apakah Bagus ingin menyalakan musik?',
     // text: "You won't be able to revert this!",
     icon: 'warning',
     showCancelButton: true,
@@ -23,8 +23,8 @@ window.addEventListener('load', () => {
 // animation timeline
 const animationTimeline = () => {
   // split chars that needs to be animated individually
-  const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
-  const hbd = document.getElementsByClassName("wish-hbd")[0];
+  const textBoxChars = document.getElementsByClassName("Hey Koala")[0];
+  const hbd = document.getElementsByClassName("Happiest bday! Enjoy ur life")[0];
 
   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
     .split("")
@@ -115,11 +115,11 @@ const animationTimeline = () => {
       },
     "+=1")
     .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
+    .to("Semoga yang diinginkan akan tercapai", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=2.5")
+    .to("kalo gatau mau jadi apa", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-3", 0.7, ideaTextTrans)
-    .to(".idea-3 strong", 0.5, {
+    .to("jadi masa depanku juga gapapa strong", 0.5, {
       scale: 1.2,
       x: 10,
       backgroundColor: "rgb(21, 161, 237)",
@@ -127,7 +127,7 @@ const animationTimeline = () => {
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=2.5")
+    .to("Stay Safe, stay healthy", 0.7, ideaTextTransLeave, "+=2.5")
     .from(
       ".idea-5",
       0.7, {
@@ -149,7 +149,7 @@ const animationTimeline = () => {
       "+=1.4"
     )
     .to(
-      ".idea-5",
+      "Stay with me :)",
       0.7, {
         scale: 0.2,
         opacity: 0,
@@ -167,7 +167,7 @@ const animationTimeline = () => {
       0.2
     )
     .staggerTo(
-      ".idea-6 span",
+      "SO",
       0.8, {
         scale: 3,
         opacity: 0,
@@ -218,7 +218,7 @@ const animationTimeline = () => {
       0.1
     )
     .staggerFromTo(
-      ".wish-hbd span",
+      "HAPPY BIRTHDAY! span",
       0.7, {
         scale: 1.4,
         rotationY: 150,
